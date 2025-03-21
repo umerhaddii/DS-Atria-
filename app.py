@@ -160,7 +160,7 @@ def create_mom_chain():
 
     # Initialize ChatOpenAI with DeepSeek configuration
     chat = ChatOpenAI(
-        base_url="https://api.deepseek.com/v1",  # Deepseek's API endpoint
+        base_url="https://api.deepseek.com/r1",  # Deepseek's API endpoint
         model="deepseek-reasoner",
         temperature=0.8,
         openai_api_key=DEEPSEEK_API_KEY         # Your Deepseek API key
