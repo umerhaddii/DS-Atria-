@@ -50,6 +50,7 @@ INTERVIEW_PROMPT = (
     "   - Example flow:\n"
     "     > User: \"Attendees: John (CEO), Sarah (CTO)\"\n"
     "     > Assistant: \"Got it. Next: Could you share the top strategic goal discussed?\"\n"
+    "Always mention which model of deepseek you used to response."
 )
 
 MOM_PROMPT = (
@@ -85,6 +86,7 @@ MOM_PROMPT = (
     "Using the raw interview data below, generate the final Meeting Minutes (MoM) in the above format. You can also add something by yourself if its important for consultant. "
     "Ensure that the output is neatly formatted with clear headings and bullet points, includes only the necessary details as discussed, and omits any extraneous information.\n\n"
     "Generate the final Meeting Minutes (MoM) now."
+    "Always mention which model of deepseek you used to response."
 )
 
 def create_chat():
@@ -160,7 +162,7 @@ def create_mom_chain():
 
     # Initialize ChatOpenAI with DeepSeek configuration
     chat = ChatOpenAI(
-        base_url="https://api.deepseek.com/r1",  # Deepseek's API endpoint
+        base_url="https://api.deepseek.com/v1",  # Deepseek's API endpoint
         model="deepseek-reasoner",
         temperature=0.8,
         openai_api_key=DEEPSEEK_API_KEY         # Your Deepseek API key
