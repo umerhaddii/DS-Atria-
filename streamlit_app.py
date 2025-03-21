@@ -29,7 +29,7 @@ with st.sidebar:
         * You can add any additional information if needed
     
     4. **Generating Minutes**
-        * Once the interview is complete, click 'generate mom'
+        * Once the interview is complete, type 'generate mom'
         * The bot will create a formatted Meeting Minutes document
     
     5. **End Session**
